@@ -8,8 +8,8 @@
     <link href='./styles/index.css' rel='stylesheet' type='text/css'>
     <link href='./styles/common.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,8 @@
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <button class="btn1" id="allp" onclick= "window.location.href='html/postslist.html'"><b>All Posts</b></button>
+            <button class="btn1" id="allp" onclick="window.location.href='html/postslist.html'"><b>All
+                    Posts</b></button>
             <button class="btn1" id="createp" onclick="opencreateModal()"><b>Create Post</b></button>
 
         </div>
@@ -47,21 +48,23 @@
             <div class="headmod">
                 <div class="headmodleft">
                     <h3>Get Started</h3>
-                 </div>
+                </div>
                 <div class="headmodright">
-                <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
-                 </div>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
+                </div>
             </div>
-         
-          <form><h3 class="sh6">Full Name</h3>
-            <input type="text" placeholder="Enter your name" required>
-            <h3 class="sh6">Username</h3>
-            <input type="text" placeholder="Enter your username" required>
-            <h3 class="sh6">Password</h3>
-            <input type="password" placeholder="Enter your password" required>
-            <h3 class="sh6">Confirm Password</h3>
-            <input type="password" placeholder="Confirm your password" required><br>
-            <button id="sub1" class="buttonmodal">Sign Up</button> </form>
+
+            <form>
+                <h3 class="sh6">Full Name</h3>
+                <input type="text" placeholder="Enter your name" required>
+                <h3 class="sh6">Username</h3>
+                <input type="text" placeholder="Enter your username" required>
+                <h3 class="sh6">Password</h3>
+                <input type="password" placeholder="Enter your password" required>
+                <h3 class="sh6">Confirm Password</h3>
+                <input type="password" placeholder="Confirm your password" required><br>
+                <button id="sub1" class="buttonmodal">Sign Up</button>
+            </form>
         </div>
     </div>
 
@@ -73,51 +76,55 @@
             <div class="headmod">
                 <div class="headmodleft">
                     <h3>Welcome Back!</h3>
-                 </div>
+                </div>
                 <div class="headmodright">
-                <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
-                 </div>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
+                </div>
             </div>
-            
-          <form > 
+
+            <form>
                 <h3 class="sh6">Username</h3>
                 <input type="text" placeholder="Enter your username" required>
                 <h3 class="sh6">Password</h3>
                 <input type="password" placeholder="Enter your password" required>
                 <button id="sub1" class="buttonmodal">Sign In</button><br><br>
-                <div id="nm" class="footmod">Not a member? <span onclick="redirect()" class="highlight">Sign Up</span></div> 
-              </form>
-        </div>
-      </div>
-
-      <!-- creating post modal-->
-      <div id="createModal" class="modal"> 
-                
-        <form class="form2"> 
-                 
-                <div class="headmod">
-                    <div class="headmodleft">
-                        <h3>Pen Your Post</h3>
-                    </div>
-                    <div class="headmodright">
-                        <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
-                    </div>
+                <div id="nm" class="footmod">Not a member? <span onclick="redirect()" class="highlight">Sign Up</span>
                 </div>
-                <div class="modbody">
+            </form>
+        </div>
+    </div>
 
-                <label><b>Title</b></label> 
-                <input type="text" placeholder="Enter title of your post" > 
+    <!-- creating post modal-->
+    <div id="createModal" class="modal">
 
-                <label><b>Contents</b></label> 
-                <textarea placeholder="Enter the contents of your post." rows="20%" cols="100%" style="border: 0px; background-color: rgb(233, 233, 233); font-family: 'Open Sans', sans-serif; font-weight: bold; padding-left: 10px; padding-top: 10px;" ></textarea>
-                
-                <button  class="buttonmodal1">Create</button>
-            
+        <form class="form2">
+
+            <div class="headmod">
+                <div class="headmodleft">
+                    <h3>Pen Your Post</h3>
+                </div>
+                <div class="headmodright">
+                    <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
+                </div>
             </div>
-            
-        </form> 
-    </div> 
+            <div class="modbody">
+
+                <label><b>Title</b></label>
+                <input type="text" placeholder="Enter title of your post">
+
+                <label><b>Contents</b></label>
+                <textarea placeholder="Enter the contents of your post." rows="20%" cols="100%"
+                    style="border: 0px; background-color: rgb(233, 233, 233); font-family: 'Open Sans', sans-serif; font-weight: bold; padding-left: 10px; padding-top: 10px;"></textarea>
+
+                <button class="buttonmodal1">Create</button>
+
+            </div>
+
+        </form>
+    </div>
 </body>
 <script src="./scripts/common.js"></script>
+<script src="./scripts/index.js"></script>
 <script src="https://kit.fontawesome.com/a7b427131e.js" crossorigin="anonymous"></script>
+
 </html>
