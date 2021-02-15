@@ -24,7 +24,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 }
 
 .heading2 {
-    font-family: 'Marck Script';
+    font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     color: black;
     position: relative;
