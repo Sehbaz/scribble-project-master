@@ -14,6 +14,7 @@ function edit() {
         postContent.style.border = "1px #ff0a54 solid";
         postTitle.style.border = "1px #ff0a54 solid";
         document.getElementById("editPost").innerText = "save";
+        changeIcon();
 
         i++;
     } else {
@@ -24,7 +25,21 @@ function edit() {
         document.getElementById("editPost").innerText = "edit";
         document.getElementById("update-title").innerText = "UPDATED :";
         document.getElementById("update-content").innerText = "UPDATED :";
+        changeIcon();
         i--;
+    }
+
+}
+
+function changeIcon() {
+    var x = document.getElementById("MyElement").classList[1];
+    if (x == "fa-save") {
+        document.getElementById("MyElement").classList.remove('fa-save');
+        document.getElementById("MyElement").classList.add('fa-edit');
+
+    } else {
+        document.getElementById("MyElement").classList.remove('fa-edit');
+        document.getElementById("MyElement").classList.add('fa-save');
     }
 
 }
@@ -42,6 +57,7 @@ function addLike() {
 
 function changeText() {
     document.getElementById("likeBtn").innerHTML = "Liked";
+
 }
 
 function addComment() {

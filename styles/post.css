@@ -62,3 +62,7 @@ ul>li {
 .myList {
     display: none;
 }
+
+.editBtn {
+    height: 33px;
+}
