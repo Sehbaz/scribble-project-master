@@ -43,3 +43,8 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     padding: 10px 10px;
     margin-left: 10px;
 }
+
+.modal1,
+.modal {
+    display: none;
+}

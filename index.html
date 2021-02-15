@@ -33,6 +33,45 @@
         </div>
     </div>
 
-</body>
 
+
+
+    <!-- Insert code for Sign Up modal here -->
+
+    <div id="signupModal" class="modal1">
+        <!-- Modal content -->
+        <div class="modal-content1">
+          <span class="close1" ><button onclick="closeModal()">&times;</button></span>
+          <h1 id="head1">Get Started</h1>
+          <form><h3 class="sh6">Full Name</h3>
+            <input type="text" placeholder="Enter Full Name" required>
+            <h3 class="sh6">Username</h3>
+            <input type="text" placeholder="Enter Username" required>
+            <h3 class="sh6">Password</h3>
+            <input type="password" placeholder="Enter Password" required>
+            <h3 class="sh6">Confirm Password</h3>
+            <input type="password" placeholder="Confirm Password" required><br>
+            <button id="sub1" >Sign Up</button> </form>
+        </div>
+    </div>
+
+    <!-- Insert code for Sign In modal here -->
+    <div id="signinModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" ><button onclick="closeModal()">&times;</button></span>
+          <h1 id="head1">Welcome Back!</h1>
+          <form>
+                <h3 class="sh6">Username</h3>
+                <input type="text" placeholder="Enter Username">
+                <h3 class="sh6">Password</h3>
+                <input type="password" placeholder="Enter Password">
+                <button id="sub1">Sign In</button><br><br>
+                <div id="nm">Not a member? <span id="redirect">Sign Up</span></div> 
+              </form>
+        </div>
+      </div>
+</body>
+<script src="./scripts/common.js"></script>
 </html>
