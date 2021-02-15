@@ -1,15 +1,26 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .signB {
-    right: 0.5%;
-    top: 1%;
-    position: fixed;
+    position: relative;
 }
 
 .btn {
     background-color: #2519ff;
     color: white;
     padding: 10px 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+
+}
+
+.inner-header {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .heading1 {
@@ -29,7 +40,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     color: black;
     position: relative;
     left: 20px;
-    width: 50%;
+    width: 100%;
 }
 
 .postButtons {
