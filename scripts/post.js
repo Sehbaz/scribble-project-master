@@ -37,6 +37,11 @@ var j = 0;
 function addLike() {
     j++;
     document.getElementById("Likes").innerHTML = j + " person like this !";
+    changeText();
+}
+
+function changeText() {
+    document.getElementById("likeBtn").innerHTML = "Liked";
 }
 
 function addComment() {

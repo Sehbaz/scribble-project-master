@@ -46,12 +46,18 @@ ul>li {
     border: none;
     color: white;
     height: 33px;
-    padding-right: 20px;
-    padding-left: 20px;
     cursor: pointer;
-    box-shadow: 1px 5px 10px 5px #ff7096;
+
 }
 
+.btn-css-section {
+    color: white;
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ff0a54;
+    box-shadow: 1px 5px 10px 5px #ff7096;
+}
 
 .myList {
     display: none;
