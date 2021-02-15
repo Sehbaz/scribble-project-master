@@ -12,3 +12,8 @@ function closeModal() {
     signinModal.style.display = "none";
     signupModal.style.display = "none";
 }
+
+function redirect() {
+    signinModal.style.display = "none";
+    signupModal.style.display = "block";
+}
