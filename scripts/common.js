@@ -10,10 +10,14 @@ function opensignupModal() {
 
 }
 
-function closeModal() {
+function closeSigninModal() {
     signinModal.style.display = "none";
+
+}
+
+function closeSignupModal() {
+
     signupModal.style.display = "none";
-    createModal.style.display = "none";
 }
 
 function redirect() {
