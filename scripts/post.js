@@ -45,8 +45,6 @@ function changeIcon() {
 }
 
 
-
-
 var j = 0;
 
 function addLike() {
