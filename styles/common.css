@@ -20,6 +20,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     position: relative;
     left: 20px;
     width: 50%;
+    font-family: 'Montez', cursive;
 }
 
 .heading2 {

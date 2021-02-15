@@ -10,11 +10,15 @@ body {
     text-align: center;
 }
 
+.blogContent {
+    margin: 2vh 10vh;
+}
 
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .comment {
@@ -23,8 +27,32 @@ body {
 
 ul {
     transform: rotate(180deg);
+    list-style: none;
+    background-color: lightgrey;
+    padding: 1% 1%;
+    width: 65%;
 }
 
 ul>li {
     transform: rotate(-180deg);
+    background-color: white;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-css {
+    background-color: #ff0a54;
+    border: none;
+    color: white;
+    height: 33px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px 5px #ff7096;
+}
+
+
+.myList {
+    display: none;
 }
