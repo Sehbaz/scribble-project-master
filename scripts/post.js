@@ -51,8 +51,14 @@ var j = 0;
 
 function addLike() {
     j++;
-    document.getElementById("Likes").innerHTML = j + " person like this !";
-    changeText();
+    if (j > 1) {
+        document.getElementById("Likes").innerHTML = j + " people like this !";
+        changeText();
+    } else {
+        document.getElementById("Likes").innerHTML = j + " person like this !";
+        changeText();
+    }
+
 }
 
 function changeText() {
