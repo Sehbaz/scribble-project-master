@@ -8,4 +8,5 @@ body {
     background-size: 100% cover !important;
     overflow: hidden;
     display: block;
+    font-family: 'Noto Sans JP';
 }

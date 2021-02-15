@@ -1,7 +1,8 @@
 body {
     background-color: #ffeedd;
     margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+
 }
 
 .row {
@@ -65,6 +66,51 @@ body {
 
 .popupDelete {
     display: none;
+
+    /* Could be more or less, depending on screen size */
+}
+
+.modal-content3 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    /* Could be more or less, depending on screen size */
+}
+
+#head2 {
+
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+#yes {
+    background-color: red;
+    color: white;
+    border-color: transparent;
+    padding: 5px 10px;
+    width: 60px;
+    left: 50px;
+}
+
+#btns {
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#no {
+
+    background-color: green;
+    color: white;
+    border-color: transparent;
+    padding: 5px 10px;
+    width: 60px;
+    right: 50px;
 }
 
 @media only screen and (max-width: 800px) {
