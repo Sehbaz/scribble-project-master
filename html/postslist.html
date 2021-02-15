@@ -6,6 +6,7 @@
     <!-- TODO: Include Google Fonts file here -->
     <link href='../styles/postslist.css' rel='stylesheet' type='text/css'>
     <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,36 +27,39 @@
     </div>
 
     <!-- list of all posts starts here -->
-    <div>
+    <div class="row">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
+        <div class="post-card" id="post1">
+            <div class="post-username">
+                <p class="">Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="post-content">
                 <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
+                    <p class="post-title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span onclick="popup(this.id)" id="1">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <span class="trash-icon"><i class="fa fa-trash" aria-hidden="true"></i></span>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
+                <p class="post-desc">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <span class="more-post" onclick="viewPost(this)">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="../html/post.html"></a>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="post-card">
+            <div class="post-username">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
+            <div class="post-content">
                 <div>
                     <p>What is linting and how can it save you time?</p>
                     <span>
@@ -71,7 +75,7 @@
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
+        <div class="post-card">
             <div>
                 <p>Yazeed Bzadough</p>
             </div>
@@ -166,6 +170,32 @@
         </div>
     </div>
 
+    <!-- Insert code for Sign In modal here - Insert code for Sign Up modal here -->
+
+    <div id="signupModal" class="modal1">
+        <!-- Modal content -->
+        <div class="form1">
+            <div class="headmod">
+                <div class="headmodleft">
+                    <h3>Get Started</h3>
+                 </div>
+                <div class="headmodright">
+                <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
+                 </div>
+            </div>
+         
+          <form><h3 class="sh6">Full Name</h3>
+            <input type="text" placeholder="Enter your name" required>
+            <h3 class="sh6">Username</h3>
+            <input type="text" placeholder="Enter your username" required>
+            <h3 class="sh6">Password</h3>
+            <input type="password" placeholder="Enter your password" required>
+            <h3 class="sh6">Confirm Password</h3>
+            <input type="password" placeholder="Confirm your password" required><br>
+            <button id="sub1" class="buttonmodal">Sign Up</button> </form>
+        </div>
+    </div>
+
     <!-- Insert code for Sign In modal here -->
     <div id="signinModal" class="modal">
 
@@ -189,8 +219,41 @@
                 <div id="nm" class="footmod">Not a member? <span onclick="redirect()" class="highlight">Sign Up</span></div> 
               </form>
         </div>
+      </div>->
+    <div id="signinModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="form1">
+            <div class="headmod">
+                <div class="headmodleft">
+                    <h3>Welcome Back!</h3>
+                 </div>
+                <div class="headmodright">
+                <i class="fa fa-times" aria-hidden="true" onclick="closeModal()"></i>
+                 </div>
+            </div>
+            
+          <form > 
+                <h3 class="sh6">Username</h3>
+                <input type="text" placeholder="Enter your username" required>
+                <h3 class="sh6">Password</h3>
+                <input type="password" placeholder="Enter your password" required>
+                <button id="sub1" class="buttonmodal">Sign In</button><br><br>
+                <div id="nm" class="footmod">Not a member? <span onclick="redirect()" class="highlight">Sign Up</span></div> 
+              </form>
+        </div>
       </div>
+      <div class="popupDelete" id="popupDelete" >
+        <button id="yes" onclick="deleteconfirm()">YES</button>
+        <button id="no" onclick="popdown()">NO</button>
+    </div>
 </body>
 <script src="../scripts/common.js"></script>
+<script src="../scripts/postslist.js"></script>
 <script src="https://kit.fontawesome.com/a7b427131e.js" crossorigin="anonymous"></script>
+
+<script>
+   
+           
+</script>
 </html>
