@@ -108,6 +108,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     align-items: center;
     justify-content: center;
     margin: auto;
+    cursor: pointer;
 
 }
 
